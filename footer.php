@@ -42,7 +42,7 @@
 				</nav><!-- .social-navigation -->
 			<?php endif; ?>
 
-			<div class="site-info">
+			<!-- <div class="site-info">
 				<?php
 					/**
 					 * Fires before the twentysixteen footer text for footer customization.
@@ -65,6 +65,6 @@
 	</div><!-- .site-inner -->
 </div><!-- .site -->
 
-<?php wp_footer(); ?>
+<?php wp_footer(); ?> -->
 </body>
 </html>

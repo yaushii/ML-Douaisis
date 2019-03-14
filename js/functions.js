@@ -211,3 +211,14 @@
 		belowEntryMetaClass( '.wp-block-image img' );
 	} );
 } )( jQuery );
+
+// fonction de l heure
+var myVar=setInterval(function(){myTimer()},1000);
+
+function myTimer()
+{
+var d=new Date();
+var t=d.toLocaleTimeString();
+document.getElementById("demo").innerHTML=t;
+}
+// fin de la fonction heure
