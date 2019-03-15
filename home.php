@@ -12,7 +12,8 @@ Template Name: Home
 
 get_header(); ?>
 
-<div>VOTRE CODE</div>
+<div><?php  echo'<a href="http://localhost/mission%20locale/wordpress/index.php/events/" > AGENDA </a>'; ?>
+</div>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
