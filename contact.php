@@ -9,6 +9,9 @@
  * @package WordPress
  * @subpackage Twenty_Sixteen
  * @since Twenty Sixteen 1.0
+ * 
+ * Template Name: contact
+ * 
  */
 
 get_header(); ?>
@@ -31,8 +34,10 @@ get_header(); ?>
 			
 			// End of the loop.
 		endwhile;
-		?>
-	
+        ?>
+        <div class="container">
+        <iframe class="frame" src="https://www.google.com/maps/d/embed?mid=1-OY8zuwZ5g5rBRLsjSweFLUXr6nVWx_s"></iframe>
+            </div>
 	</main><!-- .site-main -->
 	<?php get_sidebar( 'content-bottom' ); ?>
 

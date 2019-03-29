@@ -3489,7 +3489,7 @@ margin-bottom: -5em;
 		font-size: 40px;
 		font-size: 2.5rem;
 		line-height: 1.225;
-		margin-bottom: 1.05em;
+		margin-bottom: 2em;
 		
 	}
 h1{
@@ -4037,19 +4037,67 @@ background-color: yellow;
 .adresse{
 	color:white;
 }
+#contactForm{
+	margin:0 10em 0 10em;
+}
+.btn-info{
+	margin-top:2em;
+	
+}
+label{
+	margin-bottom:15px;
+}
+ol li{
+	list-style:none;
+}
 
+#colophon{
+	justify-content: center;
+	display: flex;
+	justify-content: space-around;
+	align-items:start;
+	width: 900px;
+	padding-top: 0.5em;
+	border-top: 3px #E72F78 solid;
+	
+	
+}
+#colophon ul li{
+	list-style:none;
+}
+.titre{
+	font-size: 1em;
+}
+.jeune{
+	font-size: 0.6em;
+}
+.employeur{
+	font-size: 0.7em;
+}
+.reste{
+	font-size: 0.6em;
+	margin-top: 1em;
+	
+}
+.frm_form_fields .frm_fields_container{
+	width: 100%;
 
-#test a {
+height: 100px;
+}
+.frame{
+	width: 45em;
+	height:25em;
 	text-align: center;
-	font-size: 3em;
-    animation: Test 3s infinite;
 }
-@keyframes Test{
-    0%{opacity: 1;}
-    50%{opacity: 0;}
-    100%{opacity: 1;}
+.container{
+	display: flex;
+	justify-content: center;
 }
-.agenda{
-	height: 50px;
-	width: 50px;
+.sondage{
+	height:8em ;
+}
+.pré-inscription{
+	height:12em ;
+	transform: rotate(90deg);
+	margin-left: 3em;
 }
