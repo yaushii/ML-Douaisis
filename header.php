@@ -17,6 +17,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
 	<link rel="pingback" href="<?php echo esc_url( get_bloginfo( 'pingback_url' ) ); ?>">
+	<script type="text/javascript" src="ville.js" defer></script>
 	<?php endif; ?>
 	<?php wp_head(); ?>
 </head>
@@ -44,7 +45,6 @@
 						<p class="site-description"><?php echo $description; ?></p>
 					<?php endif; ?>
 				</div><!-- .site-branding -->
-
 				<?php if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) ) : ?>
 					<button id="menu-toggle" class="menu-toggle"><?php _e( 'Menu', 'twentysixteen' ); ?></button>
 
@@ -56,9 +56,11 @@
 										array(
 											'theme_location' => 'primary',
 											'menu_class' => 'primary-menu',
-										)
-									);
-								?>
+											)
+										);
+										?>
+										
+								
 							</nav><!-- .main-navigation -->
 						<?php endif; ?>
 

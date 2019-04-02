@@ -35,10 +35,10 @@ get_header(); ?>
 			// End of the loop.
 		endwhile;
 		?>
-		 <?php
-echo do_shortcode('[smartslider3 slider=2]');
-?>
-        <a href="http://localhost/mission%20locale/wordpress/index.php/contactez-nous/"><img class="pré-inscription" src="<?= get_stylesheet_directory_uri(); ?>/img/pre-inscription.svg" alt=""></a>
+         
+		<div class="slider">
+		 <?php echo do_shortcode('[smartslider3 slider=2]');?>
+		 </div>
 		<?php echo do_shortcode('[embedyt]https://www.youtube.com/embed?listType=playlist&amp;list=UUtNgrMoHBVebLZggQH37mMQ&amp;v=DAYSyJQFQHQ&amp;layout=gallery[/embedyt]'); ?>
 		<a href="http://localhost/mission%20locale/wordpress/index.php/sondage/"><img class="sondage" src="<?= get_stylesheet_directory_uri(); ?>/img/avis.png" alt=""></a>
 	</main><!-- .site-main -->

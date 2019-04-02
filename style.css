@@ -1693,7 +1693,7 @@ blockquote:after,
  */
 
 .site-main > article {
-	margin-bottom: 3.5em;
+	/* margin-bottom: 3.5em; */
 	position: relative;
 }
 
@@ -2869,7 +2869,7 @@ p > video {
 	}
 
 	.site-main > article {
-		margin-bottom: 5.25em;
+		/* margin-bottom: 5.25em; */
 	}
 
 	.entry-header,
@@ -3482,7 +3482,7 @@ margin-bottom: -5em;
 	}
 
 	.site-main > article {
-		margin-bottom: 7.0em;
+		/* margin-bottom: 7.0em; */
 	}
 
 	.entry-title {
@@ -4100,4 +4100,16 @@ height: 100px;
 	height:12em ;
 	transform: rotate(90deg);
 	margin-left: 3em;
+}
+.slider{
+	border: 2px dotted black;
+	margin-bottom: 1em;
+}
+input, textarea{
+margin: 0.8em;
+
+}
+.pre{
+	display: flex;
+	justify-content: center;
 }
