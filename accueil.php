@@ -39,8 +39,10 @@ get_header(); ?>
 		<div class="slider">
 		 <?php echo do_shortcode('[smartslider3 slider=2]');?>
 		 </div>
+<div class="tube">
 		<?php echo do_shortcode('[embedyt]https://www.youtube.com/embed?listType=playlist&amp;list=UUtNgrMoHBVebLZggQH37mMQ&amp;v=DAYSyJQFQHQ&amp;layout=gallery[/embedyt]'); ?>
-		<a href="http://localhost/mission%20locale/wordpress/index.php/sondage/"><img class="sondage" src="<?= get_stylesheet_directory_uri(); ?>/img/avis.png" alt=""></a>
+</div>
+		<a href="http://http://localhost/mission locale/wordpress/index.php/sondage/"><img class="sondage" src="<?= get_stylesheet_directory_uri(); ?>/img/avis.png" alt=""></a>
 	</main><!-- .site-main -->
 	<?php get_sidebar( 'content-bottom' ); ?>
 
@@ -48,4 +50,3 @@ get_header(); ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
-

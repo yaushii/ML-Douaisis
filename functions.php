@@ -367,7 +367,11 @@ function twentysixteen_scripts() {
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.4.1' );
 
 	// Theme stylesheet.
-	wp_enqueue_style( 'twentysixteen-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'twentysixteen-style', get_stylesheet_uri());
+
+	wp_enqueue_style('boostrap-style', get_template_directory_uri() .'/css/bootstrap.min.css', array(), '4.0.0', 'all');
+
+	wp_enqueue_style('boostrap-script', get_template_directory_uri() .'/js/bootstrap.min.js', array(),'20180121', true);
 
 	// Theme block stylesheet.
 	wp_enqueue_style( 'twentysixteen-block-style', get_template_directory_uri() . '/css/blocks.css', array( 'twentysixteen-style' ), '20181230' );
@@ -573,4 +577,102 @@ function twentysixteen_widget_tag_cloud_args( $args ) {
 	return $args;
 }
 add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
+?>
+ <?php
 
+
+
+add_filter('frm_to_email', 'custom_set_email_value', 10, 4);
+
+function custom_set_email_value($recipients, $values, $form_id, $args){
+
+//    var_dump($recipients);
+
+//    var_dump($form_id);
+
+//    var_dump($args);
+
+$ville=array(
+"Nomain"=>"justine.telmann@gmail.com",
+// "Aix"=>
+// "Sameon"=>
+// "Landas"=>
+// "Beuvry La Foret"=>
+// "Auchy Les Orchies"=>
+// "Coutiches"=>
+// "Bouvignies"=>
+// "Tilloy-Les Marchiennes"=>
+// "Warling"=>
+// "wandignies-Hamage"=>
+// "Hornaing"=>
+// "Erre"=>
+// "Fenain"=>
+// "Marchiennes"=>
+// "Vred"=>
+// "Rieulay"=>
+// "Somain"=>
+// "Bruille Lez Marchiennes"=>
+// "Masny"=>
+// "Pecquencourt"=>
+// "Montigny en Ostrevent"=>
+// "Loffre"=>
+// "Lewarde"=>
+// "Ecaillon"=>
+// "Auberchicourt"=>
+// "Aniche"=>
+// "Emerchicourt"=>
+// "Monchecourt"=>
+// "Flines Les Raches"=>
+// "Lallaing"=>
+// "Waziers"=>
+// "Sin Le Noble"=>
+// "Dechy"=>
+// "Guesnain"=>
+// "Roucourt"=>
+// "Erchin"=>
+// "Fressain"=>
+// "Villers au tertre"=>
+// "Marcq en Ostrevent"=>
+// "Fechain"=>
+// "Aubygnac Au Bac"=>
+// "Brunemont"=>
+// "Bugnicourt"=>
+// "Arleux"=>
+// "Cantin"=>
+// "goeulzin"=>
+// "Ferin"=>
+// "Estrees"=>
+// "Hamel"=>
+// "Lecluse"=>
+// "Douai"=>
+// "Faumont"=>
+// "Raches"=>
+// "Anhiers"=>
+// "Roost Warendin"=>
+// "Flers En Escrebieux"=>
+// "Lauwin Planque"=>
+// "Esquerchin"=>
+// "Cuincy"=>
+// "Lambres Lez Douai"=>
+// "Courchelettes"=>
+// "Auby"=>
+// "Raimbeaucourt"=>
+);
+if($form_id == 2){
+   foreach ( $values as $value ) {
+	if ($value->field_id == 10){
+	var_dump($value->meta_value);
+		if(in_array($value->meta_value,$ville)) {
+	//	$email =	$ville[$value]
+		// $email = $ville['Nomain']
+		}
+	}      
+   }
+   exit();
+   }
+
+
+
+   return $recipients;
+
+}

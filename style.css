@@ -307,7 +307,7 @@ textarea {
 	font-family: Merriweather, Georgia, serif;
 	font-size: 16px;
 	font-size: 1rem;
-	line-height: 1.75;
+	/* line-height: 1.75; */
 }
 
 h1,
@@ -323,7 +323,7 @@ h6 {
 }
 
 p {
-	margin: 0 0 1.75em;
+	/* margin: 20px 0 1.75em; */
 }
 
 dfn,
@@ -1545,7 +1545,7 @@ blockquote:after,
 
 .site-inner {
 	margin: 0 auto;
-	max-width: 1320px;
+	max-width: 1538px;
 	position: relative;
 }
 
@@ -2765,7 +2765,7 @@ p > video {
 @media screen and (min-width: 44.375em) {
 	body:not(.custom-background-image):before,
 	body:not(.custom-background-image):after {
-		background: inherit;
+		/* background: inherit; */
 		content: "";
 		display: block;
 		height: 21px;
@@ -2788,7 +2788,7 @@ p > video {
 	}
 
 	.site {
-		/* margin: 21px; */
+		margin: 21px;
 		margin-left: 90px;
 		margin-right: 90px;
 		background-color: #feee7d;
@@ -3153,7 +3153,7 @@ p > video {
 	.content-area {
 		float: left;
 		margin-right: -100%;
-		width: 70%;
+		width: 60%;
 	}
 
 	.entry-header,
@@ -3396,6 +3396,7 @@ p > video {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		padding: 0 4.5455% 3.5em;
+		/* margin-top: 13em; */
 	}
 
 	.site-footer .social-navigation {
@@ -4030,10 +4031,7 @@ h1{
 		padding: 0;
 	}
 }
-.fb{
-	overflow: auto;
-background-color: yellow;
-}
+
 .adresse{
 	color:white;
 }
@@ -4052,14 +4050,12 @@ ol li{
 }
 
 #colophon{
-	justify-content: center;
 	display: flex;
-	justify-content: space-around;
-	align-items:start;
-	width: 900px;
+	width: 72em;
+	margin-left: 2em;
 	padding-top: 0.5em;
 	border-top: 3px #E72F78 solid;
-	
+	vertical-align: super;
 	
 }
 #colophon ul li{
@@ -4072,8 +4068,12 @@ ol li{
 	font-size: 0.6em;
 }
 .employeur{
-	font-size: 0.7em;
+	font-size: 0.76em;
 }
+.emploie ul li{
+	margin-bottom: 0.3em;
+}
+
 .reste{
 	font-size: 0.6em;
 	margin-top: 1em;
@@ -4102,14 +4102,158 @@ height: 100px;
 	margin-left: 3em;
 }
 .slider{
-	border: 2px dotted black;
+border-radius: 2em;
+	border: 2px solid black;
 	margin-bottom: 1em;
+	padding: 1em;
 }
-input, textarea{
-margin: 0.8em;
 
-}
 .pre{
 	display: flex;
 	justify-content: center;
+}
+.contact{
+	border-top: 3px solid #E72F78;
+width: 19em;
+height: 5em;
+}
+.civ{
+	display: flex;
+	justify-content: center;
+}
+.civ img {
+	transition: 1s ease;
+	}
+	
+	.civ img:hover{
+		-webkit-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		transform: scale(1.2);
+		transition: 1s ease;
+	}
+
+.bouge{
+	display: flex;
+	justify-content:space-around;
+}
+	.bouge img {
+		transition: 1s ease;
+		}
+		
+		.bouge img:hover{
+			-webkit-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			transform: scale(1.2);
+			transition: 1s ease;
+}
+
+.travail{
+	display: flex;
+	justify-content: space-between;
+}
+	.travail img {
+		transition: 1s ease;
+		}
+		
+		.travail img:hover{
+			-webkit-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			transform: scale(1.2);
+			transition: 1s ease;
+}
+
+.pair{
+	display: flex;
+	justify-content: space-around;
+}
+	.pair img {
+		transition: 1s ease;
+		}
+		
+		.pair img:hover{
+			-webkit-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			transform: scale(1.2);
+			transition: 1s ease;
+}
+
+.ofaj{
+	display: flex;
+	justify-content: center;
+	
+}
+.ofaj img {
+	transition: 1s ease;
+	}
+	
+	.ofaj img:hover{
+		-webkit-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		transform: scale(1.2);
+		transition: 1s ease;
+	}
+	
+
+.logo{
+	display: flex;
+	float: right;
+	height: 6em;
+	width: 9em;
+
+}
+.envie h6{
+	border: 0px!important;
+	font-size: 3em;
+	text-align: center;
+	color: #E72F78;
+}
+.envie, ul ,li{
+	list-style-type: none;
+	font-size: 1em;
+}
+.pink{
+	color: #E72F78;
+}
+#totalpoll-id-76a970e19557b7ec2226b0a737139b07.totalpoll-poll-container .totalpoll-choices .totalpoll-choice .totalpoll-choice-checkbox-container{
+	background-color: #FEEE7D;
+}
+#totalpoll-id-76a970e19557b7ec2226b0a737139b07.totalpoll-poll-container .totalpoll-choices .totalpoll-choice .totalpoll-choice-content{
+	background-color: #FEEE7D;
+}
+.plus{
+	margin: 20px 0 1.75em;
+}
+.part{
+	display: flex;
+	
+	height: 6em;
+	width: 15em;
+	margin-top: 6em;
+}
+.savoir{
+	font-size: 1.2em;
+	margin-top: 4em;
+}
+.mob{
+	margin-top: 2em;
+}
+.co{
+	margin-bottom: 17em;
+ }
+@media screen and (max-width: 400px) {
+	.row{
+		margin-top: 16em !important;
+		
+}
+}
+@media screen and (max-width: 768px) {
+	.row{
+		margin-top: 16em !important;
+}
+}
+.mail{
+	margin-left: 22em;
+}
+.developed-by img{
+	visibility: hidden !important;
 }
